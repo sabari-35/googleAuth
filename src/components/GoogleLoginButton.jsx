@@ -6,6 +6,7 @@ const API_URL = import.meta.env.VITE_API_URL;
 
 const GoogleLoginButton = () => {
   const navigate = useNavigate();
+    console.log("CLIENT ID FROM ENV:", import.meta.env.VITE_GOOGLE_CLIENT_ID);
 
   const handleSuccess = async (credentialResponse) => {
     try {
